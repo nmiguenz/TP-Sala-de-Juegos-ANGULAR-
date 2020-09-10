@@ -24,9 +24,10 @@ export class AgilidadAritmeticaComponent implements OnInit {
     this.nuevoJuego = new JuegoAgilidad();
     console.info("Inicio agilidad");  
   }
+
   NuevoJuego() {
     this.ocultarVerificar=false;
-   this.repetidor = setInterval(()=>{ 
+    this.repetidor = setInterval(()=>{ 
       
       this.Tiempo--;
       console.log("llego", this.Tiempo);
@@ -39,6 +40,7 @@ export class AgilidadAritmeticaComponent implements OnInit {
       }, 900);
 
   }
+  
   verificar()
   {
     this.ocultarVerificar=false;
